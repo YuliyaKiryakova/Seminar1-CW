@@ -1,22 +1,22 @@
-﻿/*
-Напишите прогу, которая на вход принимает два числа и и проверяет, является ли первое число квадратом второго.
-a = 25, b = 5 -> да 
-a = 2, b = 10 -> нет 
-a = 9, b = -3 -> да 
-a = -3 b = 9 -> нет
-*/
+﻿// Напишите прогу, которая выдает название дня недели по заданному номеру
 
-Console.Write("Введите целое число a: ");
-string numberA = Console.ReadLine()!;
-Console.Write("Введите целое число b: ");
-string numberB = Console.ReadLine()!;
-int numA = int.Parse(numberA);
-int numB = int.Parse(numberB);
-if (numA == numB * numB)
-{
-    Console.WriteLine($"Квадрат числа {numB} равен {numA}");
-}
+Console.Write("Введите номер: ");
+//string number = Console.ReadLine()!;
+int number = Convert.ToInt32(Console.ReadLine()!);
+
+if (number == 1)
+    Console.WriteLine("Понедельник");
+else if (number == 2)
+    Console.WriteLine("Вторник");
+else if (number == 3)
+    Console.WriteLine("Среда");
+else if (number == 4)
+    Console.WriteLine("Четверг");
+else if (number == 5)
+    Console.WriteLine("Пятница");
+else if (number == 6)
+    Console.WriteLine("Суббота");
+else if (number == 7)
+    Console.WriteLine("Воскресенье");
 else
-{
-Console.WriteLine($"Квадрат числа {numB} не равен {numA}");
-}
+    Console.WriteLine("Такого дня недели не существует");

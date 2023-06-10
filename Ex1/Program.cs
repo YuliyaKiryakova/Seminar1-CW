@@ -12,7 +12,7 @@ Console.Write("Введите целое число b: ");
 string numberB = Console.ReadLine()!;
 int numA = int.Parse(numberA);
 int numB = int.Parse(numberB);
-if (numA == numB * numB)
+/*if (numA == numB * numB)
 {
     Console.WriteLine($"Квадрат числа {numB} равен {numA}");
 }
@@ -20,3 +20,8 @@ else
 {
 Console.WriteLine($"Квадрат числа {numB} не равен {numA}");
 }
+*/
+/*bool check = numA == numB*numB;
+Console.WriteLine(check);
+*/
+Console.WriteLine(numA == numB * numB);
